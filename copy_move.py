@@ -109,5 +109,9 @@ def main(image_path):
 
 
 if __name__ == "__main__":
-    # Replace 'image_path.jpg' with the path to your test image
-    main("beach_wood_copy.png")
+    # Replace with path to your test image
+    test_img = "samples/beach_wood_copy.jpg"
+    if not os.path.exists(test_img):
+        test_img = "archit6.jpg"
+    main(test_img)
+
